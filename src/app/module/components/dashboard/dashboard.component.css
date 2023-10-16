@@ -1,0 +1,104 @@
+.accordion {
+  display: block;
+  width: 100%;
+}
+
+.accordion-item {
+  display: block;
+  border: solid 1px #ccc;
+}
+
+.accordion-item-header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.accordion-item-header,
+.accordion-item-body {
+  padding: 16px;
+}
+.accordion-item-body {
+  display: inline-block;
+}
+
+.accordion-item-header:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+cdk-accordion {
+  margin-bottom: 20px;
+}
+cdk-accordion-item {
+  margin-bottom: 20px;
+}
+
+.member {
+  display: inline-block;
+  border: solid 1px black;
+  text-align: center;
+  border-radius: 5px;
+  background-color:#d0d0d0;
+  padding: 5px;
+}
+
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.nav-bar {
+  margin-top: 30px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+
+.group-list {
+  font-size: 30px;
+}
+
+.create-group {
+  display: inline-block;
+  background-color: lightgray;
+  color: black;
+  border: none;
+}
+
+.search {
+  display: inline-block;
+  float: right;
+}
+
+.techactive {
+  color:green;
+  display: inline-block;
+}
+
+.updates {
+  margin-right: 10px;
+}
+
+.fa-trash-o,.fa-clone,.fa-pen-to-square{
+  margin-right: 10px;
+}
+
+.fa,.fa-pen-to-square {
+  font-size: 20px;
+}
+
+.memebers-name {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.group-name {
+  margin-right: 70px;
+}

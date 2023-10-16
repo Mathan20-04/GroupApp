@@ -1,0 +1,43 @@
+.container {
+  padding: 20px;
+}
+
+.member-list {
+  margin-top:10px;
+  display: flex;
+  align-items: center;
+}
+
+.margin-top {
+  margin-top:10px;
+  display: flex;
+  align-items: center;
+}
+
+.groupDetail {
+  margin-top:30px;
+  display: flex;
+  align-items: center;
+}
+
+.fa-trash-o {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.heading {
+  border-bottom: solid 1px #d3d3d3
+}
+
+.action {
+  display: inline-block
+}
+
+.fa-circle-xmark {
+  display: inline-block;float: right;font-size: 28px;
+}
+
+.fa-circle-plus {
+  font-size:30px;
+}
+

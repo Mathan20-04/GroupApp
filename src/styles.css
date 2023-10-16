@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin:0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; }
+
+i{
+  cursor:pointer;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+btn {
+  cursor:pointer;
+}
+
+button {
+  width: 150px;
+}
+

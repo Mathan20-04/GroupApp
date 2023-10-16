@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="heading">
+    <h2 class="action">{{item.action=='add'?'Create Group':'Edit Group'}}</h2>
+    <i class="fa-regular fa-circle-xmark" (click)="close()"></i>
+  </div>
+  <div class="row groupDetail">
+    <label class="col-sm-4">Group Name<font color="red">*</font></label>
+    <span class="col-sm-6"><input [(ngModel)]="groupName" class="form-control" type="text"></span>
+  </div>
+  <div class="row margin-top">
+    <label class="col-sm-4">Admin Name<font color="red">*</font></label>
+    <span class="col-sm-6"><input [(ngModel)]="adminName" class="form-control" type="text"></span>
+  </div>
+  <div class="row member-list" *ngFor="let input of memberInputList;let i =index">
+    <label class="col-sm-4">Members Name</label>
+    <span class="col-sm-6"><input id="{{i}}" [(ngModel)]="input['member_name']" class="form-control" type="text"></span>
+    <span class="col-sm-2"><i  class="fa fa-trash-o" (click)="removeMembers(i)"></i></span>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-10"></div>
+    <div class="col-sm-2" (click)="addMembers()">
+      <i class="fa-solid fa-circle-plus"></i>
+      <h6>Add member</h6>
+    </div>
+  </div>
+  <div class="alignCenter"><button class="btn btn-success" [disabled]="isSaved" (click)="save()">{{item.action=='add'?'Add':'Update'}}</button></div>
+</div>
